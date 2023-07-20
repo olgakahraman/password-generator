@@ -109,8 +109,7 @@ for( let i=0; i<passwordLength; i++){
    password1.textContent += characters[randomIndex1];
    password2.textContent += characters[randomIndex2];
 
-   
-  
 }
 })
+
 
