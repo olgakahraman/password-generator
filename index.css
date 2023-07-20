@@ -70,3 +70,15 @@ padding-top: 12px;
 .password-btn:hover{
     cursor:pointer;
 }
+footer{
+  margin:60px auto;
+  text-align: center;
+  color:#d5d4d8
+}
+footer a{
+  text-decoration: none;
+  color:#55f991;
+}
+footer a:hover{
+  text-decoration: underline;
+}
