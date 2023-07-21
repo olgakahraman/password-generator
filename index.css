@@ -2,20 +2,21 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-
 }
-body{
-    background-color: #1f2937;
+body {
+  background-color: #1f2937;
+ 
 }
 
 .container {
   margin: 30px auto;
   display: block;
-  
+
   max-width: 550px;
 
   padding: 115px 52px;
 }
+
 h3 {
   font-family: "Karla", sans-serif;
   color: white;
@@ -42,8 +43,8 @@ p {
   line-height: 24px;
   margin-top: 60px;
 }
-.generate-password-btn:hover{
-    cursor:pointer;
+.generate-password-btn:hover {
+  cursor: pointer;
 }
 .line {
   border: 1px solid #2f3e53;
@@ -61,24 +62,88 @@ h6 {
   line-height: 24px;
   border-radius: 6px;
   margin-top: 38px;
-text-align: center;
-width: 211px;
-height: 39px;
-padding-top: 12px;
+  text-align: center;
+  width: 211px;
+  height: 39px;
+  padding-top: 12px;
+}
+.password-btn:hover {
+  cursor: pointer;
+}
+footer {
+  margin: 60px auto;
+  text-align: center;
+  color: #d5d4d8;
+}
+footer a {
+  text-decoration: none;
+  color: #55f991;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.toggle {
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
   
 }
-.password-btn:hover{
-    cursor:pointer;
+
+.toggle-text {
+  padding-bottom:7px;
+  font-size: 18px;
+  color: white;
 }
-footer{
-  margin:60px auto;
-  text-align: center;
-  color:#d5d4d8
+
+.toggle-btn {
+  height: 20px;
+  width: 40px;
+  background-color: #10b981;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 0 10px;
 }
-footer a{
-  text-decoration: none;
-  color:#55f991;
+
+.inner-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ecfdf5;
+  transition: all 250ms ease-in-out;
 }
-footer a:hover{
-  text-decoration: underline;
+.toggle-btn.toggled > .inner-circle {
+  transform: translateX(20px);
+  background-color: #333;
+}
+
+.unselected {
+  opacity: 0.25;
+}
+
+
+
+body.light {
+  background-color: #ecfdf5;
+  transition: all 200ms ease-in-out;
+}
+.light h3{
+  color:#333;
+}
+.light .mint{
+  color:#10b981;
+
+}
+.light .line {
+  border: 1px solid #d5d4d8;
+ 
+}
+.light .grey{
+  color:#333;
+}
+.light footer{
+  color:#5a537b;
+}
+ .toggle p{
+  color:#10b981;
 }
