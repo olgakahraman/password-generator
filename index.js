@@ -112,4 +112,19 @@ for( let i=0; i<passwordLength; i++){
 }
 })
 
+toggleBtn.addEventListener("click", () => {
+  let body = document.querySelector("body");
+
+  if (toggleBtn.classList.contains("toggled")) {
+    toggleBtn.classList.remove("toggled");
+    body.classList.add("light");
+    lightenText.classList.remove("unselected");
+    darkenText.classList.add("unselected");
+  } else {
+    toggleBtn.classList.add("toggled");
+    body.classList.remove("light");
+    lightenText.classList.add("unselected");
+    darkenText.classList.remove("unselected");
+  }
+});
 
