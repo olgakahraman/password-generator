@@ -5,7 +5,6 @@
 }
 body {
   background-color: #1f2937;
- 
 }
 
 .container {
@@ -83,15 +82,13 @@ footer a:hover {
   text-decoration: underline;
 }
 .toggle {
-  
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  
 }
 
 .toggle-text {
-  padding-bottom:7px;
+  padding-bottom: 7px;
   font-size: 18px;
   color: white;
 }
@@ -121,29 +118,25 @@ footer a:hover {
   opacity: 0.25;
 }
 
-
-
 body.light {
   background-color: #ecfdf5;
   transition: all 200ms ease-in-out;
 }
-.light h3{
-  color:#333;
+.light h3 {
+  color: #333;
 }
-.light .mint{
-  color:#10b981;
-
+.light .mint {
+  color: #10b981;
 }
 .light .line {
   border: 1px solid #d5d4d8;
- 
 }
-.light .grey{
-  color:#333;
+.light .grey {
+  color: #333;
 }
-.light footer{
-  color:#5a537b;
+.light footer {
+  color: #5a537b;
 }
- .toggle p{
-  color:#10b981;
+.toggle p {
+  color: #10b981;
 }

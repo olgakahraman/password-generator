@@ -97,20 +97,17 @@ let password2 = document.querySelector("#passwordBtn2");
 
 let generateBtn = document.querySelector("#generatePasswordBtn");
 let passwordLength = 15;
-generateBtn.addEventListener("click", function(){
-password1.textContent="";
-password2.textContent="";
-for( let i=0; i<passwordLength; i++){
-  
-   
-   let randomIndex1 =  Math.floor(Math.random() * characters.length);
-   let randomIndex2 =  Math.floor(Math.random() * characters.length);
+generateBtn.addEventListener("click", function () {
+  password1.textContent = "";
+  password2.textContent = "";
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex1 = Math.floor(Math.random() * characters.length);
+    let randomIndex2 = Math.floor(Math.random() * characters.length);
 
-   password1.textContent += characters[randomIndex1];
-   password2.textContent += characters[randomIndex2];
-
-}
-})
+    password1.textContent += characters[randomIndex1];
+    password2.textContent += characters[randomIndex2];
+  }
+});
 
 toggleBtn.addEventListener("click", () => {
   let body = document.querySelector("body");
@@ -127,4 +124,3 @@ toggleBtn.addEventListener("click", () => {
     darkenText.classList.remove("unselected");
   }
 });
-
